@@ -24,6 +24,25 @@ function Footer(){
                     <a href="https://www.linkedin.com/in/satish-3000s/"><img src={Linkedin} alt="linkedin"/></a>
                 </div>
             </div>
+
+            <div className="credits">
+                <div>
+                    <h2>Credits</h2>
+                </div>
+                <div className="creditLinks">
+                    <a href="https://app.diagrams.net">app.diagrams.net</a>
+                    <a href="https://www.flaticon.com/">flaticon.com</a>
+                    <a href="https://freeicons.io/">freeicons.io</a>
+                    <a href="https://freeicons.io/">wallpaperaccess.com</a>
+                    <a href="https://pokeapi.co/">pokeapi.co</a>
+                    <a href="https://blobs.app/">blobs.app</a>
+                </div>
+            </div>
+
+            
+            <div className="myName">
+                Developed By Satish Gaud
+            </div>
         </div>
     )
 }

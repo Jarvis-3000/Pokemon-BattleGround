@@ -51,3 +51,10 @@
     }
 
 }
+
+@media screen and (max-width:700px) {
+    .header{
+        border-radius: 0px;
+        margin-bottom: 0px;
+    }
+}

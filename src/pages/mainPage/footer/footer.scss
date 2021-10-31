@@ -41,4 +41,55 @@
             padding:10px;
         }
     }
+
+    .myName{
+        margin:20px auto;
+        border:0px solid aliceblue;
+        border-bottom: 2px solid aliceblue;
+        border-radius: 10px;
+        padding:10px;
+        font-size: x-large;
+        font-weight: bold;
+        word-spacing: 5px;
+        text-align: center;
+        width:80%;
+    }
+
+    .credits{
+        margin:20px 0px;
+        width:50%;
+        padding:0px 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+        div{
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            font-size: large;
+            font-weight: 500;
+        }
+
+
+        .creditLinks a{  
+            border: 1px solid aliceblue;
+            border-radius: 5px;
+            padding:10px 10px;
+            width:fit-content;
+            text-decoration: none;
+            color:white;
+            font-size: large;
+            margin:5px;
+            font-weight: 500;
+
+            &:hover{
+                background-color:rgb(196, 224, 229) ;
+                color:#38141A;
+                font-weight: 500;
+            }
+        }
+    }
 }

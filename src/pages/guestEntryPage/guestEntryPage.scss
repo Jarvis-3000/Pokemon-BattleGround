@@ -1,0 +1,53 @@
+.guestEntryPage {
+  width: 100%;
+  height: 650px;
+  position: relative;
+
+  .bgImage {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/images/battleground.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);  //blurring the bgImage
+  }
+
+  .form {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    
+    background-image: linear-gradient(to left, #003366dc, #38141ade);
+    padding: 30px 20px;
+    border-radius: 5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      width: 100%;
+      color: aliceblue;
+      font-size: large;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px;
+      background-color: aliceblue;
+    }
+
+    button {
+      width: 70%;
+      padding: 10px;
+      margin-top: 30px;
+      background-color: aliceblue;
+      font-weight: 600;
+    }
+  }
+}

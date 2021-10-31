@@ -4,6 +4,8 @@
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 
   ::-webkit-scrollbar {
     width: 16px;
