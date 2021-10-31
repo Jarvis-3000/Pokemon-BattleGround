@@ -1,0 +1,53 @@
+.header{
+    width:100%;
+    padding:10px 30px;
+    background-image:linear-gradient(to left ,#003366,#38141A);
+    border-radius: 5px;
+    color:rgb(227, 233, 238);
+    margin-bottom: 10px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .intro{
+        flex:8;
+        height:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .logo{
+            width:50px;
+            height:50px;
+            transform: rotateZ(90deg);
+        }
+        .heading{
+            padding:0px 10px;
+            font-size: x-large;
+            font-weight: bold;
+        }
+    }
+
+    .profile{
+        flex:4;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        .faceBox{
+            width: 50px;
+            height:50px;
+            padding:10px;
+            background-color: rgb(196, 224, 229);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}

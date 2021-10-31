@@ -1,0 +1,44 @@
+.footer{
+    width:100%;
+    min-height:300px;
+    background-image:linear-gradient(to top,#003366,#38141A);
+    color:aliceblue;
+    padding:10px;
+
+    .intro{
+        width:100%;
+        display: flex;
+        padding:10px 20px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .logo{
+            width:50px;
+            height:50px;
+            transform: rotateZ(90deg);
+        }
+        .heading{
+            padding:0px 10px;
+            font-size: x-large;
+            font-weight: bold;
+        }
+    }
+
+    .contactProfiles{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        div{
+            width:50px;
+            height:50px;
+            margin:10px;
+            border-radius: 50%;
+            background-color: rgb(196, 224, 229);
+            padding:10px;
+        }
+    }
+}

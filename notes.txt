@@ -1,0 +1,1 @@
+themeColor = gradient(left,right,#003366,#38141A)
