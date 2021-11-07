@@ -39,6 +39,11 @@
             border-radius: 50%;
             background-color: rgb(196, 224, 229);
             padding:10px;
+
+            &:hover{
+                background-color: rgb(172, 243, 255);
+            transition: .5s ease-in-out;
+            }
         }
     }
 

@@ -1,0 +1,25 @@
+.startBattle{
+    width:100%;
+    padding:10px 30px;
+    background-image:linear-gradient(to left ,#003366,#38141A);
+    border-radius: 5px;
+    color:rgb(227, 233, 238);
+    margin-bottom: 10px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        padding:10px 20px;
+        font-size: large;
+        font-weight: 500;
+        border:none;
+        cursor: pointer;
+
+        &:hover{
+            background-color:darkorange;
+        }
+    }
+}

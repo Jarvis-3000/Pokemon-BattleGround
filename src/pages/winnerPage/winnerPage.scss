@@ -1,0 +1,48 @@
+.winnerPage {
+  width: 100%;
+  height: 650px;
+  background-image: url("../../assets/images/winner_page.svg");
+  background-size: cover;
+  background-position:top;
+  padding:30px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+
+    .trophy {
+      margin: auto;
+      width: 250px;
+      height: 250px;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      font-size: x-large;
+      font-weight: 600;
+      color: #fcc81e;
+      text-align: center;
+
+    }
+  }
+
+  .newGame {
+      border-radius: 5px;
+    padding: 15px 30px;
+    margin: 40px 20px;
+    color: white;
+    background-color: #e09718;
+    font-size: large;
+    font-weight: 600;
+  }
+}

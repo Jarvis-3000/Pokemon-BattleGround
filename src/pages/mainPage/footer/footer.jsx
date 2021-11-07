@@ -6,11 +6,13 @@ import Gmail from "../../../assets/icons/gmail.svg"
 import Github from "../../../assets/icons/github.svg"
 import Linkedin from "../../../assets/icons/linkedin.svg"
 
+import {Link} from "react-router-dom"
+
 function Footer(){
     return (
         <div className="footer">
             <div className="intro">
-                <img src={Logo} alt="logo" className="logo"/>
+                <Link to="/"><img src={Logo} alt="logo" className="logo"/></Link>
                 <span className="heading">Pokemon BattleGround</span>
             </div>
             <div className="contactProfiles">
