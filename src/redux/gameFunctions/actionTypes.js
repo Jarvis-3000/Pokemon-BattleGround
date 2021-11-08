@@ -1,0 +1,9 @@
+export const TOGGLE_GAME_STARTED = "toggleGameStarted";
+export const TOGGLE_MATCH_STARTED = "toggleMatchStarted";
+export const SET_GROUP_ID = "setGroupId";
+export const ADD_POKEMON = "addPokemon";
+export const SET_MY_CURRENT_POKEMON = "setMyCurrentPokemon";
+export const SET_YOUR_CURRENT_POKEMON = "setYourCurrentPokemon";
+export const SET_MATCH_RESULT='setMatchResult'
+export const SET_ROUNDS_FINISHED="setRoundsFinished"
+export const CHNAGE_DISABILITY="changeDisability"

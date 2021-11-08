@@ -1,19 +1,25 @@
 import React from "react"
+import { useDispatch, useSelector } from "react-redux"
 import "./top.scss"
 
 import {Link} from "react-router-dom"
 import {SocketContext} from "../../../socketConnection/connectSocket"
+import * as gameActions from "../../../redux/gameFunctions/actions"
 
 function Top(){
-    const [id,setId]= React.useState('')
     const [style,setStyle]=React.useState({display:'none'})
     const socket=React.useContext(SocketContext)
 
+    const dispatch=useDispatch()           //useDispatch() for dispatching an action
+    const {groupId} = useSelector(state=>state.gameReducer)
+
     const handleConnectSocket=()=>{
+        console.log("starting.....")
         socket.emit("start")
         socket.once("start",({id})=>{
-            setId(id)
             setStyle({display:'block'})
+            console.log("dispatching to setGroupId")
+            dispatch(gameActions.setGroupId(id))
         })
     }
 
@@ -28,7 +34,7 @@ function Top(){
                     Share Id
                 </div>
                 <div className="id">
-                    {id}
+                    {groupId}
                 </div>
             </div>
 

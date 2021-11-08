@@ -1,7 +1,18 @@
-import React from "react"
+import React,{useContext} from "react"
 import "./startGame.scss"
 
-function StartGame({handleDisplay}){
+import {useSelector} from "react-redux"
+import { SocketContext } from "../../socketConnection/connectSocket";
+
+function StartGame(){
+    const {groupId}= useSelector(store=>store.gameReducer)
+    const socket=useContext(SocketContext)
+    
+    const handleDisplay=()=>{
+      console.log(groupId)
+        socket.emit("startGame",groupId);    
+    }
+
     return(
         <div className="startBattle">
             <button onClick={handleDisplay}>START</button>
