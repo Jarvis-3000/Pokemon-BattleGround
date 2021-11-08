@@ -24,7 +24,7 @@ function App() {
     socket.emit("startGame");
     socket.once("startGame", () => {
       setDisplay(true);
-      window.scrollTo(0,90)  //scroll 200px down
+      window.scrollTo(0, 90)  //scroll 200px down
     });
   };
 
@@ -36,7 +36,7 @@ function App() {
         <Route exact path="/join" component={JoinPage} />
         <Route exact path="/battle">
           {/*multiple components at same path*/}
-          {!display?<StartGame handleDisplay={handleDisplay} />:null}
+          {!display ? <StartGame handleDisplay={handleDisplay} /> : null}
           {display ? <AvailPoks style={display} /> : null}
           <BattlePage />
         </Route>
