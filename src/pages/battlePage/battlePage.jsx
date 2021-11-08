@@ -44,6 +44,7 @@ function BattlePage(){
                     <p>Select one of the pokemon in your Pokemon List</p>
                     <p>Let your oponent select his/her pokemon.</p>
                     <p>Click On the center pokeball for start the battle round.</p>
+                    <p>Always change the selected pokemon</p>
                 </div>
             </div>
 
@@ -51,7 +52,7 @@ function BattlePage(){
                 <div className="congrats">
                     Result : {matchResult}
                 </div>
-                <button className="nextRound">{`NEXT ROUND`}</button>
+                {/* <button className="nextRound">{`NEXT ROUND`}</button> */}
             </div>
 
             <div className="battleSection">
