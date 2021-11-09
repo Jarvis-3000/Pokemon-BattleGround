@@ -2,6 +2,14 @@
 
 ## [Second link for the app](https://pokemon-battleground.netlify.app/)
 
+### Game Info
+    If you find Start Game is not working 
+    kindly wait a minute to let it connect
+    Be patient and have fun.
+
+
+
+
 ### [Backend App Code Link](https://github.com/Jarvis-3000/pokemon_battleGround_backend)
 
 # 
