@@ -7,7 +7,7 @@ import shape from "./shape.svg"
 function Section({text,pos,random}) {
   let Style = {};
 
-  if (pos % 2 == 0) {
+  if (pos % 2 === 0) {
     Style = {
       backgroundImage: "linear-gradient(to left,#003366,#38141A)",
     };
@@ -24,7 +24,7 @@ function Section({text,pos,random}) {
         <div className="section" style={Style}>
             {
               //this is for left-right images-texts display
-              (pos%2==0)?
+              (pos%2===0)?
               (
                 <div className="text">
                   {text}
@@ -42,7 +42,7 @@ function Section({text,pos,random}) {
             </div>
 
             {
-              (pos%2!=0)?
+              (pos%2!==0)?
               (
                 <div className="text">
                   {text}

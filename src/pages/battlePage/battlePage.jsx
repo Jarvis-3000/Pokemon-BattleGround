@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "./battlePage.scss"
 
-import { useHistory } from "react-router-dom"
 import playerBG from "../../assets/images/playerBG.svg"
 import Logo from "../../assets/icons/logo.png"
 import { useSelector } from "react-redux"
@@ -11,7 +10,6 @@ import { useDispatch } from "react-redux"
 import * as gameActions from "../../redux/gameFunctions/actions"
 
 function BattlePage() {
-    const history = useHistory()
     const dummyPokemon = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg`
     const [display, setDisplay] = useState({ display: 'none' })
     const [disable, setDisable] = useState({ pointerEvents: 'none', opacity: .3 })
@@ -29,7 +27,7 @@ function BattlePage() {
         }
         // console.log("changing disability")
     }
-    
+
     useEffect(() => {
         if (matchStarted) {
             setDisable({

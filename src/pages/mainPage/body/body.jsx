@@ -32,7 +32,6 @@ function Body(){
         <div className="body">
            {
                Object.keys(Randoms).map(key=>{
-                   let index=Randoms[key]
                     return(
                         <Section text={Texts[i++].text} pos={i-1} random={key} key={key}/>
                     )

@@ -42,7 +42,7 @@ function App() {
       }
     });
     // console.error("countttttt", count);
-    if (count == 5) {
+    if (count === 5) {
       dispatch(gameActions.setRoundsFinished());
     }
   };
