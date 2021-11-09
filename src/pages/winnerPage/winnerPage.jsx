@@ -1,9 +1,18 @@
-import React from "react";
-import "./winnerPage.scss";
+import React,{useEffect} from "react";
+import "./winnerPage.scss"
 
 import Trophy from "../../assets/images/trophy.png";
+import {useHistory} from "react-router-dom"
 
 function WinnerPage() {
+    
+  const history=useHistory()
+
+  const handleNewGame=()=>{
+    history.replace("/")
+    window.location.reload()
+  }
+
   return (
     <div className="winnerPage">
       <div>
@@ -14,7 +23,7 @@ function WinnerPage() {
         </div>
       </div>
 
-      <button className="newGame">Start New Game</button>
+      <button className="newGame" onClick={handleNewGame}>Start New Game</button>
     </div>
   );
 }

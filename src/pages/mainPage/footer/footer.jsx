@@ -16,9 +16,9 @@ function Footer(){
                 <span className="heading">Pokemon BattleGround</span>
             </div>
             <div className="contactProfiles">
-                <div>
+                {/* <div>
                     <a href="https://sgaud2001@gmail.com"><img src={Gmail} alt="gmail"/></a>
-                </div>
+                </div> */}
                 <div>
                     <a href="https://github.com/jarvis-3000"><img src={Github} alt="github"/></a>
                 </div>

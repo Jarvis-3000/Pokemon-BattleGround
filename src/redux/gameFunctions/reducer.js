@@ -5,13 +5,14 @@ const INITIAL_STATE = {
   pokemons: [],
   gameStarted: false,
   matchStarted: false,
-  groupId: "",
+  groupId: null,
   myCurrentPokemon: "",
   yourCurrentPokemon:'',
-  rounds: [],
   gotMatchResult: true,
   matchResult:'',
-  isRoundsFinished:false
+  isRoundsFinished:false,
+  error:'',
+  isJoined:false
 };
 
 function gameStateReducer(state = INITIAL_STATE, action) {
@@ -67,7 +68,23 @@ function gameStateReducer(state = INITIAL_STATE, action) {
     case actionTypes.CHNAGE_DISABILITY:
       return {
         ...state,
-        pokemons:changeDisabilityUtil({...state,name:action.payload}),
+        pokemons: changeDisabilityUtil({
+          ...state,
+          name: action.payload.name,
+          result: action.payload.result,
+        }),
+      };
+
+    case actionTypes.SET_ERROR:
+      return {
+        ...state,
+        error: action.payload,
+      };
+
+    case actionTypes.SET_JOINED:
+      return {
+        ...state,
+        isJoined:true,
       };
     default:
       return state;

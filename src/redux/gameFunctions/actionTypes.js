@@ -7,3 +7,5 @@ export const SET_YOUR_CURRENT_POKEMON = "setYourCurrentPokemon";
 export const SET_MATCH_RESULT='setMatchResult'
 export const SET_ROUNDS_FINISHED="setRoundsFinished"
 export const CHNAGE_DISABILITY="changeDisability"
+export const SET_ERROR="setError"
+export const SET_JOINED="setJoined"

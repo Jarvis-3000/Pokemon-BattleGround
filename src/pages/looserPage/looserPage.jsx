@@ -2,8 +2,16 @@ import React from "react";
 import "./looserPage.scss";
 
 import sadPokemon from "../../assets/images/sad_pokemon.png"
+import {useHistory} from "react-router-dom"
 
 function LooserPage() {
+  const history=useHistory()
+
+  const handleNewGame=()=>{
+    history.replace("/")
+    window.location.reload()
+  }
+
   return (
     <div className="looserPage">
       <div>
@@ -15,7 +23,7 @@ function LooserPage() {
         </div>
       </div>
 
-      <button className="newGame">Start New Game</button>
+      <button className="newGame" onClick={handleNewGame}>Start New Game</button>
     </div>
   );
 }

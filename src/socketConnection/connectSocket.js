@@ -1,7 +1,7 @@
 import React from "react"
 import IO from "socket.io-client"
    
-export const socket = IO("localhost:5000", {
+export const socket = IO("https://pokemon-battleground-backend.herokuapp.com/", {
   transports: ["websocket", "polling", "flashsocket"],
 });
 

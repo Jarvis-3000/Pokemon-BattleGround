@@ -16,19 +16,15 @@ function GuestEntryPage(){
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-        console.log("Going to enter",input)
+        // console.log("Going to enter",input)
         socket.emit("join",input)
-        socket.once("join",(res)=>{
-            if(res.valid && !res.roomFull){
-                history.push("/battle")     //redirecting to battle page
-                console.log("dispatching to setGroupId")
+        socket.once("join",({msg})=>{
+            if(msg){
+                // console.log("dispatching to setGroupId")
                 dispatch(gameActions.setGroupId(input))
-            }
-            else if(!res.valid){
-                alert(`Not valid id`)
-            }
-            else{
-                alert('Room is full')
+                dispatch(gameActions.setJoined())
+                //redirecting to battle page
+                history.push("/battle")     
             }
         })
     }
