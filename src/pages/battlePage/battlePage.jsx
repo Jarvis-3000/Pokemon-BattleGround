@@ -93,9 +93,9 @@ function BattlePage() {
                     <img src={myCurrentPokemon.image || dummyPokemon} alt="player pokemon" />
                 </div>
 
-                <div className="playerSeparator" onClick={handleMatchResult} >
+                <div className="playerSeparator" onClick={handleMatchResult} style={disable}>
                     <span className="line"></span>
-                    <button>
+                    <button >
                         <img src={Logo} alt="playButton" />
                     </button>
                 </div>
