@@ -1,3 +1,5 @@
+# [Main Link](pokemon-battle-ground.vercel.app/)
+
 ## [Second link for the app](https://pokemon-battleground.netlify.app/)
 
 ### [Backend App Code Link](https://github.com/Jarvis-3000/pokemon_battleGround_backend)
