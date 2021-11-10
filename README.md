@@ -7,6 +7,8 @@
     kindly wait a minute to let it connect
     Be patient and have fun.
    ### [Explanation Video](https://youtu.be/ogQ9HF0e6-o/)
+   ![image](https://user-images.githubusercontent.com/57852939/141051614-601e150e-b813-4700-9659-73535e5412fd.png)
+
 
 
 ## [Designing for the project](https://drive.google.com/file/d/18L7yiZ9WquyinytDEYNYNfsfeeRgi52v/view?usp=sharing)
