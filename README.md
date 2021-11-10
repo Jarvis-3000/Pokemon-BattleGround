@@ -6,6 +6,7 @@
     If you find Start Game is not working 
     kindly wait a minute to let it connect
     Be patient and have fun.
+    [Explanation Video](https://youtu.be/ogQ9HF0e6-o/)
 
 
 ## [Designing for the project](https://drive.google.com/file/d/18L7yiZ9WquyinytDEYNYNfsfeeRgi52v/view?usp=sharing)
