@@ -8,7 +8,7 @@
     Be patient and have fun.
 
 
-
+## [Designing for the project](https://drive.google.com/file/d/18L7yiZ9WquyinytDEYNYNfsfeeRgi52v/view?usp=sharing)
 
 ### [Backend App Code Link](https://github.com/Jarvis-3000/pokemon_battleGround_backend)
 
