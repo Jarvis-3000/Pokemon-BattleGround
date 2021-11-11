@@ -1,4 +1,4 @@
-# [Main Link](pokemon-battle-ground.vercel.app/)
+# [Main Link](https://pokemon-battle-ground.vercel.app/)
 
 ## [Second link for the app](https://pokemon-battleground.netlify.app/)
 
