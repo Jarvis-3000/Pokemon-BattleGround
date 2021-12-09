@@ -3,9 +3,14 @@
 ## [Second link for the app](https://pokemon-battleground.netlify.app/)
 
 ### Game Info
+
+    This is React.js(frontend), Node.js(server) and Socket.io(Real-Time Communication) based game.
+    Any 2 players can play this game across the world and the winner will get the winner stage and the loser will get the loser stage.
+
     If you find Start Game is not working 
     kindly wait a minute to let it connect
     Be patient and have fun.
+    
    ### [Explanation Video](https://youtu.be/ogQ9HF0e6-o/)
    ![image](https://user-images.githubusercontent.com/57852939/141051614-601e150e-b813-4700-9659-73535e5412fd.png)
 
