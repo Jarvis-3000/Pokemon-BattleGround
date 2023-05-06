@@ -14,11 +14,9 @@ function Top(){
     const {groupId} = useSelector(state=>state.gameReducer)
 
     const handleConnectSocket=()=>{
-        console.log("starting.....")
         socket.emit("start")
         socket.once("start",({id})=>{
             setStyle({display:'block'})
-            console.log("dispatching to setGroupId")
             dispatch(gameActions.setGroupId(id))
         })
     }

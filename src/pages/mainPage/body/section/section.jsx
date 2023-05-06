@@ -17,8 +17,6 @@ function Section({text,pos,random}) {
     };
   }
 
-  console.log("in the section")
-
 
   return (
         <div className="section" style={Style}>

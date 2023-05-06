@@ -22,10 +22,8 @@ function BattlePage() {
             socket.emit("matchStart", ({ groupId, details: myCurrentPokemon }))
         }
         else {
-            // alert()
             dispatch(gameActions.setError("Already used. Try another"));
         }
-        // console.log("changing disability")
     }
 
     useEffect(() => {

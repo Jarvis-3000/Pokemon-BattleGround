@@ -9,7 +9,6 @@ function StartGame(){
     const socket=useContext(SocketContext)
     
     const handleDisplay=()=>{
-      console.log(groupId)
         socket.emit("startGame",groupId);    
     }
 

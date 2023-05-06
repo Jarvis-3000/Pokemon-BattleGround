@@ -7,7 +7,6 @@ import * as gameActions from "../../redux/gameFunctions/actions"
 import {SocketContext} from "../../socketConnection/connectSocket"
 
 function AvailPoks(){
-    console.log("yes")
     const dispatch=useDispatch()
     const {pokemons,groupId}=useSelector(store=>store.gameReducer)
     const socket = React.useContext(SocketContext)
