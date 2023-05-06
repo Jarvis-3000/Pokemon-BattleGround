@@ -16,11 +16,10 @@ function GuestEntryPage(){
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-        // console.log("Going to enter",input)
+
         socket.emit("join",input)
         socket.once("join",({msg})=>{
             if(msg){
-                // console.log("dispatching to setGroupId")
                 dispatch(gameActions.setGroupId(input))
                 dispatch(gameActions.setJoined())
                 //redirecting to battle page

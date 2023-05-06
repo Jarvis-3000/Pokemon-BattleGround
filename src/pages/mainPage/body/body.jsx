@@ -17,7 +17,6 @@ function Body(){
         while(random in Randoms){
             random=Math.floor(Math.random() * 649) + 1;
         }
-        // console.log(random)
         Randoms[random]=i
     }
 

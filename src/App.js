@@ -133,10 +133,7 @@ function App() {
     });
 
     socket.on("matchResult", (result) => {
-      // console.error("getting match resulttttttttttttt");
       dispatch(gameActions.setMatchResult(result.msg));
-      // console.log("disabling current pokemon", myCurrentPokemon);
-      // console.warn(result)
       dispatch(
         gameActions.changeDisability({ name: myCurrentPokemon.name, result })
       );

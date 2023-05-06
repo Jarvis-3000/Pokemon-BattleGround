@@ -35,7 +35,7 @@ export const addPokemon = (payload) => {
               disable: false,
               win:false
             }
-      console.log(pokemon)
+      
       dispatch({
         type: actionTypes.ADD_POKEMON,
         payload: pokemon,
