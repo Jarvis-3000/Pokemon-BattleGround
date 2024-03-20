@@ -66,9 +66,9 @@ function BattlePage() {
             <div className="gameInfo">
                 <button>Info</button>
                 <div className="infos">
-                    <p>Select one of the pokemon in your Pokemon List</p>
-                    <p>Let your oponent select his/her pokemon.</p>
-                    <p>Click On the center pokeball for start the battle round.</p>
+                    <p>Select one of the pokemons in your Pokemon List</p>
+                    <p>Let your oponent select a pokemon</p>
+                    <p>Click On the center pokeball for start the battle round</p>
                     <p>Always change the selected pokemon</p>
                 </div>
             </div>
