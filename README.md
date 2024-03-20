@@ -1,6 +1,5 @@
-# [Main Link](https://pokemon-battle-ground.vercel.app/)
+# [Main Link]([https://pokemon-battle-ground.vercel.app/](https://pokemon-battleground-app.vercel.app/))
 
-## [Second link for the app](https://pokemon-battleground.netlify.app/)
 
 ### Game Info
 
