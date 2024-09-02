@@ -16,7 +16,9 @@ function Top(){
 
     const handleConnectSocket=()=>{
         setIdLoading(true)
+        
         socket.emit("start")
+        
         socket.once("start",({id})=>{
             setStyle({display:'block'})
             setIdLoading(false)
