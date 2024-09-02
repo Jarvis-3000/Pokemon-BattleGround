@@ -8,15 +8,18 @@ import * as gameActions from "../../../redux/gameFunctions/actions"
 
 function Top(){
     const [style,setStyle]=React.useState({display:'none'})
+    const [idLoading, setIdLoading] = React.useState(false)
     const socket=React.useContext(SocketContext)
 
     const dispatch=useDispatch()           //useDispatch() for dispatching an action
     const {groupId} = useSelector(state=>state.gameReducer)
 
     const handleConnectSocket=()=>{
+        setIdLoading(true)
         socket.emit("start")
         socket.once("start",({id})=>{
             setStyle({display:'block'})
+            setIdLoading(false)
             dispatch(gameActions.setGroupId(id))
         })
     }
@@ -32,7 +35,8 @@ function Top(){
                     Share Id
                 </div>
                 <div className="id">
-                    {groupId}
+                    {idLoading && <span>Id Loading...</span>}
+                    {groupId && <span>{groupId}</span>}
                 </div>
             </div>
 
