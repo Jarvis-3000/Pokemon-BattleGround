@@ -31,13 +31,17 @@ function Top(){
                 <Link to="/join"><button className="joinGame">Join Game</button></Link>
             </div>
             <div className="groupId" style={style}>
-                <div className="share">
-                    Share Id
-                </div>
-                <div className="id">
-                    {idLoading && <span>Id Loading...</span>}
-                    {groupId && <span>{groupId}</span>}
-                </div>
+                {idLoading && <span>Id Loading...</span>}
+                {!idLoading && groupId && (
+                    <>
+                        <div className="share">
+                            Share Id
+                        </div>
+                        <div className="id">
+                            {groupId}
+                        </div>
+                    </>
+                )
             </div>
 
         </div>
