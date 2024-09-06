@@ -15,6 +15,8 @@ function Top() {
   const { groupId } = useSelector((state) => state.gameReducer);
 
   const handleConnectSocket = () => {
+    setStyle({ display: "block" });
+    
     if (!groupId) {
       setIdLoading(true);
     }
@@ -22,7 +24,6 @@ function Top() {
     socket.emit("start");
 
     socket.once("start", ({ id }) => {
-      setStyle({ display: "block" });
       setIdLoading(false);
       dispatch(gameActions.setGroupId(id));
     });
