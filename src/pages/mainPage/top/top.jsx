@@ -42,7 +42,8 @@ function Top() {
       <div className="groupId" style={style}>
         {idLoading && (
           <div>
-            <b>Please Wait. Id Loading...</b>
+            <b>Please Wait. Id generating...</b>
+            <p>It might take 30 seconds for the first time...</p>
           </div>
         )}
         {!idLoading && groupId && (
